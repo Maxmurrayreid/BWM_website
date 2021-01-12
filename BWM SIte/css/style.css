@@ -1,0 +1,342 @@
+ /* background pic */
+ body {
+  background-image: url(../media/water\ background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* body, html {
+  min-height: 100vh;
+} */
+
+/* ////////////////////////////////////////css grid//////////////////////////////////////////// */
+body  {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+      "header header"
+      "main   aside"
+      "footer footer";
+      margin-bottom: 300px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  padding: 20px;
+  grid-area: main;
+  background-color: rgb(0, 0, 0, 0.6);
+  color:  white;
+  margin: 30px;
+  border-radius: 5%;
+}
+
+aside {
+  padding: 20px;
+  grid-area: aside;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: white;
+  margin: 30px;
+  border-radius: 5%;
+}
+
+/* //////////////////////////////////upcoming main css grid//////////////////////////////// */
+#upcoming-images{
+  width: 100%;
+  filter: grayscale(100%);
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+    "photo1 photo2 photo3"
+    "photo4 photo5 photo6";
+}
+
+#upcomingphoto1{
+  grid-area: photo1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#upcomingphoto2{
+  grid-area: photo2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#upcomingphoto3{
+  grid-area: photo3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#upcomingphoto4{
+  grid-area: photo4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upcomingphoto5{
+  grid-area: photo5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upcomingphoto6{
+  grid-area: photo6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*///////////////////////////////// Footer css////////////////////////////// */
+
+footer {
+  width: 100%;
+  padding: 50px;
+  height: auto;
+  grid-area: footer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  background-color: grey;
+  font-family: 'Roboto', sans-serif;
+  /* display: flex; */
+}
+
+
+.social{
+  float: right;
+  font-size: 24px;
+  /* margin-right: 0; */
+  /* display: inline; */
+}
+
+.footer{
+  float: left;
+  /* display: block; */
+}
+
+/*/////////////////////////////////////// header css ////////////////////////////////// */
+
+#logo{
+  max-width: 200px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link{
+  font-size: 20px;
+
+}
+
+.active{
+  border: 4px solid white;
+  border-radius: 20px;
+}
+
+.searchbox{
+  font-size: 20px;
+  margin: 8px;
+}
+
+/* /////////////////////////////////////Index home CSS///////////////////////////// */
+
+h1{
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#camelphat {
+  display: block;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 20px; */
+}
+
+.paragraph {
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+}
+
+#spotify {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+/*////////////////////////////////////// upcoming page//////////////////////////////////// */
+
+.artists h3{
+  position: absolute;
+  opacity: 0;
+  transition: .3s;
+}
+.artists:hover h3{
+ opacity: 1;
+}
+
+.artists a{
+  top: 50%;
+}
+
+.gigs{
+  width: 100%;
+  border-radius: 50%;
+  margin: 80px;
+  position: relative;
+  max-width: 300px;
+  padding: 3px;
+}
+
+.gigs:hover{
+  filter: blur(2px) brightness(80%);
+  transition: .3s;
+  box-shadow: 0 0 16px cyan;
+}
+
+#covidnotice{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  
+}
+
+
+/* //////////////////////////////////////media page css//////////////////////////////////// */
+
+.youtube{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.vidtext{
+  float: right;
+  text-align: justify;
+}
+
+video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+audio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 20px;
+}
+/* ///////////////////////////////////////link page css/////////////////////////////////// */
+
+.link-image{
+  max-width: 400px;
+  padding: 12px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* /////////////////////////////////////contact page css/////////////////////////////////// */
+
+input[type=text], input[type=email], textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* resize: vertical; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  padding: 20px;
+}
+
+#map{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 80%;
+  min-height: 500px;
+}
+
+/* ////////////////////////////////////////media querie////////////////////////////////// */
+/* media querie changes grid into a ingle row for main grid and into 2 for the upcoming gig images. also changes footer to stack the info */
+@media screen and (max-width: 1200px) {
+  body  {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+   margin-bottom: 400px;
+  }
+
+  #upcoming-images{
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "photo1 photo2"
+      "photo3 photo4"
+      "photo5 photo6";
+  }
+
+  .social{
+    float: none;
+  }
+  
+  .footer{
+    float: none;
+    
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  body{
+    margin-bottom: 400px;
+  }
+} */
